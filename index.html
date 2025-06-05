@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles/stylesheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+  <section class="hero">
+    <h1>Hi, I'm Michael Page</h1>
+    <p>I'm a B.A.S. Software Development graduate from Utah Valley University,
+      driven to solve complex challenges through full-stack applications and secure, efficient code.</p>
+    <a href="#projects">View My Work </a>
+    <div class="contact-buttons">
+      <a href="mailto:j4mpage@gmail.com" title="Email" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/michael-page-09713732a/" target="_blank" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/mpage99" target="_blank" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2>Selected Projects</h2>
+    <div class="project-grid">
+      <a href="index.html" target="_blank">
+      <div class="project-card">
+        <img src="image.png" alt="Project 1">
+        <div class="project-overlay">
+          <h3>Encrypted Password Comparator</h3>
+          <p>A Node.js + SQL application that scrapes popular passwords from the web, encrypts them, then
+            checks a set of encrypted passwords for matches. It employs a progress bar for monitoring and checkpointing
+            for reliability, saving the results to a JSON file.</p>
+        </div>
+      </div>
+      </a>
+      <a href="http://localhost:3000" target="_blank">
+      <div class="project-card">
+        <img src="image2.png" alt="Project 2">
+        <div class="project-overlay">
+          <h3>Multithreaded Disk Scheduling Sim</h3>
+          <p>A C application that simulates disk scheduling algorithms (FCFS, SSTF, LOOK, C-LOOK) in a multi-threaded environment.
+            It factors block numbers to simulate load, manages threads with mutexes, and outputs results for analysis.</p>
+        </div>
+      </div>
+      </a>
+      <a href="index.html" target="_blank">
+      <div class="project-card">
+        <img src="image3.png" alt="Project 3">
+        <div class="project-overlay">
+          <h3>Project Three</h3>
+          <p>Interactive portfolio with micro-interactions.</p>
+        </div>
+      </div>
+      </a>
+    </div>
+  </section>
+</body>
+</html>

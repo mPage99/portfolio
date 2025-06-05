@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Disk Scheduling Visualization</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+<div class="header">
+  <a href="http://localhost:63342/web1/index.html" class="back-arrow"><i class="fas fa-arrow-left"></i></a>
+  <h1>Disk Scheduling Visualization</h1>
+</div>
+<div class="chart-section">
+  <div class="btn-group">
+    <button onclick="loadChart('fcfs')">FCFS</button>
+    <button onclick="loadChart('sstf')">SSTF</button>
+    <button onclick="loadChart('look')">LOOK</button>
+    <button onclick="loadChart('clook')">C-LOOK</button>
+  </div>
+  <canvas id="chartCanvas"></canvas>
+</div>
+<div class="summary">
+  <p>This project visualizes key disk scheduling algorithms used in operating systems to manage disk I/O requests.
+    The algorithms are implemented in C for performance and low-level control. Efficient scheduling can be seen with fewer
+    jumps in <strong>position</strong>, showing improved performance.
+
+    Check out the <a href="https://github.com/mPage99/block_access_algos" target="_blank">source code</a> for more details.
+    <span class="algorithm-list">
+      <strong>FCFS</strong> (First Come, First Served),
+      <strong>SSTF</strong> (Shortest Seek Time First),
+      <strong>LOOK</strong>, and
+      <strong>C-LOOK</strong> (Circular LOOK).
+    </span>
+  </p>
+</div>
+  <script src="main.js" defer></script>
+
+</body>
+</html>
+
