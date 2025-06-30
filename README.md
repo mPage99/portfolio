@@ -21,6 +21,15 @@ A lightweight HTTP server implementation built from scratch:
 - Built with TypeScript for type safety
 - Modular request/response architecture
 
+### 3. 📱 iOS Weapon Collection Game
+A native iOS collection-based exploration game:
+- Built with Swift and UIKit using MVC architecture
+- SQLite database integration for weapon management
+- Custom touch-based movement controls
+- Real-time game world rendering
+- Interactive object system with multiple game elements
+- Progress tracking and filtering system
+
 ---
 ## 📁 Project Structure
 ```
