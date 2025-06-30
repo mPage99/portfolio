@@ -126,3 +126,99 @@ canvas {
 .algorithm-list strong {
     color: #F28C28;
 }
+
+/* Additional styles for the HTTP Server page */
+.project-section {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.project-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.features, .tech-stack, .upcoming, .setup {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+ul li:before {
+    content: "•";
+    color: #3498db;
+    position: absolute;
+    left: 0;
+}
+
+.code-block {
+    background: #f8f9fa;
+    border-radius: 6px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+}
+
+.code-block code {
+    display: block;
+    padding: 1rem;
+    background: #2c3e50;
+    color: #fff;
+    border-radius: 4px;
+    margin: 0.5rem 0;
+    font-family: monospace;
+}
+
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #24292e;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: background 0.3s ease;
+}
+
+.github-link:hover {
+    background: #1a1f24;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem 0;
+    border-top: 1px solid #eee;
+}
+
+@media (max-width: 768px) {
+    .project-section {
+        padding: 0 1rem;
+    }
+
+    .features, .tech-stack, .upcoming, .setup {
+        padding: 1rem;
+    }
+}

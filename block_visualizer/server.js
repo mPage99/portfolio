@@ -7,6 +7,10 @@ const { exec } = require('child_process');
 // display the page for api info
 app.use(express.static('public'))
 
+app.get('/httpserver', (req, res) => {
+    res.sendFile(__dirname + '/public/httpserver.html')
+})
+
 // endpoint to run the C scheduling algorithms
 app.post('/api/run-simulation', (req, res) => {
     exec('./disk_scheduler', (error, stdout, stderr) => {
@@ -23,6 +27,7 @@ app.post('/api/run-simulation', (req, res) => {
         res.json({ success: true })
     })
 })
+
 // route for fcfs steps
 app.get('/api/fcfs', async (req, res) => {
     try {
