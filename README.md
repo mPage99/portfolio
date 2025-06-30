@@ -3,41 +3,79 @@
 Welcome to my personal software development portfolio. This site showcases a curated selection of my projects, focused on backend systems, system-level programming, API development, and more.
 
 ---
+## 🚀 Featured Projects
 
-## 🚧 Status
+### 1. 💽 Disk Scheduling Visualizer
+An interactive visualization tool demonstrating various disk scheduling algorithms:
+- FCFS (First Come First Served)
+- SSTF (Shortest Seek Time First)
+- LOOK
+- C-LOOK
+- Built with Node.js, Express, and Chart.js
+- Core algorithms implemented in C for performance
 
-> This project is a **work in progress**. Expect frequent updates, improved styling, and expanded content over time.
+### 2. 🌐 TypeScript HTTP Server
+A lightweight HTTP server implementation built from scratch:
+- Raw TCP socket handling
+- Custom HTTP protocol implementation
+- Built with TypeScript for type safety
+- Modular request/response architecture
 
 ---
-
 ## 📁 Project Structure
 ```
-├── public/             # Static assets (images, HTML)
-├── src/                # Main source files (JS, CSS, etc.)
-├── styles/             # Custom stylesheets
-├── components/         # Reusable UI components
-└── README.md
+web1/
+├── block_visualizer/            # Disk Scheduling Project
+│   ├── node_modules/
+│   ├── public/                  # Static assets
+│   │   ├── httpserver.html      # HTTP Server project page
+│   │   ├── index.html           # Main visualization page
+│   │   ├── main.js              # Chart & visualization logic
+│   │   └── styles.css           # Shared styles
+│   ├── disk_scheduler/          # C implementation of algorithms
+│   ├── server.js                # Express server
+│   ├── *_steps.csv              # Algorithm output files
+│   └── package.json             # Project dependencies
+├── styles/                      # Global stylesheet directory
+├── images/                      # Image assets
+│   ├── image.png
+│   ├── image2.png
+│   ├── image3.png
+│   ├── image4.png
+│   └── me_hiking.png
+└── index.html                   # Portfolio landing page
 ```
 ---
 
-## 🧩 Features
+## 🌟 Features
 
-- 📄 Project cards with descriptions & overlays
+- 📊 Interactive algorithm visualizations
+- 🖥️ Custom HTTP server implementation
 - 📱 Mobile-friendly responsive layout
-- 🧪 Visualizations of past algorithm-focused projects
+- 🔄 Real-time data processing
+- 🎨 Modern, clean UI design
+---
 
 ## 🛠️ Tech Stack
 
-- HTML / CSS
+### Frontend
+- HTML5 / CSS3
 - JavaScript (vanilla)
-- Node.js
-- C
+- Chart.js for visualizations
+- Responsive design
+- Font Awesome icons
 
+### Backend
+- Node.js
+- Express.js
+- TypeScript
+- C (for algorithm implementations)
+
+---
 ## 📌 To Do
 
-- [ ] Add past projects (password scraper/comparator, large-scale db visualizer)
+- [ ] Add another new project 
 - [ ] Allow user to send input to Disk Scheduling Sim & show completion times
-- [ ] Polish mobile layout
 - [ ] Improve directory structure / implement MVC or another pattern
 - [ ] Deploy (via GitHub Pages / Vercel / Netlify)
-- [ ] Implement some React components if appropriate
+- [ ] Allow user to interact with the HTTP server 
