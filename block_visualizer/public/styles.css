@@ -222,3 +222,68 @@ ul li:before {
         padding: 1rem;
     }
 }
+
+.video-showcase {
+    margin: 2rem auto;
+    max-width: 400px; /* Adjusted for typical phone width */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 177.78%; /* 16:9 inverted for portrait mode (9:16) */
+    height: 0;
+    overflow: hidden;
+    background: #000;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.controls-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.control-item {
+    padding: 0.8rem;
+    background: #f5f5f5;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.weapon-system, .gameplay, .technical {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+h3 {
+    color: #2c3e50;
+    margin: 1.5rem 0 1rem 0;
+}
+
+ul ul {
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+}
+
+/* Add responsive adjustments for smaller screens */
+@media (max-width: 480px) {
+    .video-showcase {
+        max-width: 100%;
+        margin: 1rem auto;
+    }
+}

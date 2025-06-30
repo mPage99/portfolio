@@ -11,6 +11,10 @@ app.get('/httpserver', (req, res) => {
     res.sendFile(__dirname + '/public/httpserver.html')
 })
 
+app.get('/iosgame', (req, res) => {
+    res.sendFile(__dirname + '/public/iosgame.html')
+})
+
 // endpoint to run the C scheduling algorithms
 app.post('/api/run-simulation', (req, res) => {
     exec('./disk_scheduler', (error, stdout, stderr) => {
